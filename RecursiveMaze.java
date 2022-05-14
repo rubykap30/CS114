@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
-public class Main444 {
+public class RecursiveMaze {
     static String[][] maze;
     
     //driver method for the maze recursion
@@ -24,7 +24,7 @@ public class Main444 {
                 maze[o][j] = Character.toString(temp[o].charAt(j));
             }
         }
-        new Main444().move(1,0);
+        new RecursiveMaze().move(1,0);
     }
     // recursive move method that navigates the maze
     private void move(int x, int y) {
